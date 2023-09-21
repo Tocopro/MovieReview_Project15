@@ -1,0 +1,27 @@
+{
+  "name": "moviereview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "handlebars": "^4.7.6",
+    "express-handlebars": "^5.2.0",
+    "bcrypt": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

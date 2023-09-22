@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./../public/css/style.css">
     <title>Movie Review</title>
 </head>
 
@@ -22,8 +22,25 @@
   
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <a class="navbar-item" href="index.html">
           Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="category.html">Category</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="#">Horror</a>
+              <a class="navbar-item" href="#">Action</a>
+              <a class="navbar-item" href="#">Thriller</a>
+              <a class="navbar-item" href="#">Comedy</a>
+              <a class="navbar-item" href="#">Drama</a>
+              <a class="navbar-item" href="#">Romance</a>
+              <a class="navbar-item" href="#">Adventure</a>
+              <a class="navbar-item" href="#">Documentary</a>
+          </div>
+      </div>
+
+        <a class="navbar-item" href="about.html">
+          About
         </a>
 
       </div>
@@ -31,10 +48,10 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary">
+            <a class="button is-primary" href="signup.html">
               <strong>Sign up</strong>
             </a>
-            <a class="button is-light">
+            <a class="button is-light" href="login.html">
               Log in
             </a>
           </div>
@@ -43,29 +60,103 @@
     </div>
   </nav>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th><abbr title="MovieID">Movie ID</abbr></th>
-        <th><abbr title="Category">Category</abbr></th>
-        <th><abbr title="Director">Director</abbr></th>
-        <th><abbr title="MovieTitle">MovieTitle</abbr></th>
-        <th><abbr title="MovieLength">MovieLength</abbr></th>
-        <th><abbr title="Year">Year</abbr></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>1</th>
-        <th>Action</th>
-        <td>Robert Schwentke</td>
-        <td>Red</td>
-        <td>104 minutes</td>
-        <td>2010</td>
-
-      </tr>
-    </tbody>
-  </table>
+  <!-- Home Page Content -->
+  <section class="section">
+    <div class="container">
+        <h1 class="title">Welcome to Movie Review Website</h1>
+        <p>
+            We are your go-to platform for exploring and reviewing movies of various genres. Whether you're a fan of Horror, Action, Thriller, Comedy, Drama, Romance, Adventure, or Documentary films, we've got you covered.
+        </p>
+        <p>
+            Our passionate community of movie enthusiasts rates and reviews films to help you make informed choices about what to watch next. We believe in the power of collective opinions and the magic of cinema.
+        </p>
+        <h2 class="subtitle">Categories</h2>
+        <div class="columns is-multiline">
+            <!-- Horror Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Horror</h3>
+                    <p>
+                        Get ready for spine-chilling experiences with our Horror movie category.
+                    </p>
+                </div>
+            </div>
+            <!-- Action Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Action</h3>
+                    <p>
+                        High-octane action-packed movies await in our Action category.
+                    </p>
+                </div>
+            </div>
+            <!-- Thriller Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Thriller</h3>
+                    <p>
+                        Keep your heart racing with suspenseful Thriller films.
+                    </p>
+                </div>
+            </div>
+            <!-- Comedy Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Comedy</h3>
+                    <p>
+                        Laugh out loud with our collection of Comedy movies.
+                    </p>
+                </div>
+            </div>
+            <!-- Drama Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Drama</h3>
+                    <p>
+                        Dive into emotional and thought-provoking stories in the Drama category.
+                    </p>
+                </div>
+            </div>
+            <!-- Romance Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Romance</h3>
+                    <p>
+                        Experience the magic of love with our Romance movie selection.
+                    </p>
+                </div>
+            </div>
+            <!-- Adventure Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Adventure</h3>
+                    <p>
+                        Embark on thrilling adventures with our Adventure films.
+                    </p>
+                </div>
+            </div>
+            <!-- Documentary Category -->
+            <div class="column is-3">
+                <div class="box">
+                    <h3 class="subtitle is-6">Documentary</h3>
+                    <p>
+                        Explore the real world with our Documentary collection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="subtitle">How We Rate Movies</h2>
+        <p>
+            We rely on the insights and opinions of our community of movie enthusiasts. Users like you rate and review movies, helping others discover hidden gems and avoid disappointments.
+        </p>
+        <p>
+            Join our community today and start sharing your thoughts on the movies you love!
+        </p>
+        <div class="buttons">
+            <a class="button is-primary" href="signup.html">Sign Up Now</a>
+        </div>
+    </div>
+</section>
 
   <footer class="footer">
     <div class="content has-text-centered">

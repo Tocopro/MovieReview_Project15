@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../public/css/style.css">
+    <title>Movie Review</title>
+</head>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" >
+        <h2>Movie Review</h2>
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="category.html">Category</a>
+            <div class="navbar-dropdown">
+                <a class="navbar-item" href="review.html">Review</a>
+            </div>
+        </div>
+
+        <a class="navbar-item" href="about.html">
+          About
+        </a>
+
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="signup.html">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light" href="login.html">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!-- Review Page Content -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Review Movies</h1>
+            <div class="content">
+                <h2>Review</h2>
+                <p>
+                    Reviewing movies is a great way to contribute to our community and help fellow movie enthusiasts make informed choices. Here are some benefits of reviewing movies:
+                </p>
+                <ul>
+                    <li>Share your thoughts and opinions about movies you've watched.</li>
+                    <li>Help others discover hidden gems and avoid disappointments.</li>
+                    <li>Engage in discussions and conversations with like-minded individuals.</li>
+                    <li>Contribute to the collective knowledge of our movie-loving community.</li>
+                </ul>
+                <p>
+                    Ready to add your movie review? Use the form below to get started:
+                </p>
+                <form>
+                    <div class="field">
+                        <label class="label">Movie ID</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Enter Movie ID">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Rating (0-10)</label>
+                        <div class="control">
+                            <input class="input" type="number" min="0" max="10" placeholder="Enter Rating">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Review</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Write your review here"></textarea>
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-primary" type="submit">Submit Review</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

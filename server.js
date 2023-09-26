@@ -17,6 +17,7 @@ const sess = {
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
+app.use(express.static('public'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -28,3 +29,25 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
+
+
+app.get('/signup', (req, res) =>
+{
+  res.render('signup');
+});
+
+app.get('/login', (req, res) =>
+{
+  res.render('login');
+});
+
+
+app.get('/index', (req, res) =>
+{
+  res.render('index');
+});
+
+app.get('/review', (req, res) =>
+{
+  res.render('review');
+})

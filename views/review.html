@@ -74,24 +74,24 @@
                     <div class="field">
                         <label class="label">Movie ID</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Enter Movie ID">
+                            <input id="movieinput" class="input" type="text" placeholder="Enter Movie ID">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Rating (0-10)</label>
                         <div class="control">
-                            <input class="input" type="number" min="0" max="10" placeholder="Enter Rating">
+                            <input id="ratinginput" class="input" type="number" min="0" max="10" placeholder="Enter Rating">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Review</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder="Write your review here"></textarea>
+                            <textarea id="reviewinput" class="textarea" placeholder="Write your review here"></textarea>
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-primary" type="submit">Submit Review</button>
+                            <button id="submitinput" class="button is-primary" type="submit">Submit Review</button>
                         </div>
                     </div>
                 </form>
@@ -99,4 +99,5 @@
         </div>
     </section>
 </body>
+<script src='/public/js/add-review.js'></script>
 </html>

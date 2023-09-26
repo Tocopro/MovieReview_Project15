@@ -17,9 +17,8 @@ Review.init(
       max: 10,
       min: 0,
       validate: {
-        max: {
-          msg: "Review cannot exceed 10/10",
-        },
+        max: 10,
+        min: 0,
       },
     },
     review: {

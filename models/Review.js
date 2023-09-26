@@ -14,11 +14,11 @@ Review.init(
     rating: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      max: 5,
+      max: 10,
       min: 0,
       validate: {
         max: {
-          msg: "Review cannot exceed 5 stars",
+          msg: "Review cannot exceed 10/10",
         },
       },
     },
@@ -27,18 +27,8 @@ Review.init(
       allowNull: false,
     },
     movie_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "movie",
-        key: "id",
-      },
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "user",
-        key: "id",
-      },
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {

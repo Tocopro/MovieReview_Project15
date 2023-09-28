@@ -1,0 +1,77 @@
+<!-- Review Page Content -->
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Review Movies</h1>
+      <div class="content">
+        <h2>Review</h2>
+        <p>
+          Reviewing movies is a great way to contribute to our community and
+          help fellow movie enthusiasts make informed choices. Here are some
+          benefits of reviewing movies:
+        </p>
+        <ul>
+          <li>Share your thoughts and opinions about movies you've watched.</li>
+          <li>Help others discover hidden gems and avoid disappointments.</li>
+          <li>Engage in discussions and conversations with like-minded
+            individuals.</li>
+          <li>Contribute to the collective knowledge of our movie-loving
+            community.</li>
+        </ul>
+        <p>
+          Ready to add your movie review? Use the form below to get started:
+        </p>
+        {{#if loggedIn}}
+        <form class="add-review-form">
+          <div class="field">
+            <label class="label">Movie Name</label>
+            <div class="control">
+              <input
+                id="movieinput"
+                class="input"
+                type="text"
+                placeholder="Enter Movie Name"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Rating (0-10)</label>
+            <div class="control">
+              <input
+                id="ratinginput"
+                class="input"
+                type="number"
+                min="0"
+                max="10"
+                placeholder="Enter Rating"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Review</label>
+            <div class="control">
+              <textarea
+                id="reviewinput"
+                class="textarea"
+                placeholder="Write your review here"
+              ></textarea>
+            </div>
+          </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button
+                id="submitinput"
+                class="button is-primary"
+                type="submit" value="submit"
+              >Submit Review</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+      <script src="/js/add-review.js"></script>
+  </section>
+
+{{else}}
+  <a href="/login">You must login first to submit a review</a>
+{{/if}}

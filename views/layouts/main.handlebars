@@ -1,12 +1,31 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>Movie Review</title>
-</head>
-<body>
-    {{{body}}}
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Review Website</h1>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/addreview">Leave a Review</a>
+        {{#if loggedIn}}
+          <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+      {{#if loggedIn}}
+        <script src="/js/logout.js"></script>
+      {{/if}}
+    </header>
+    <div class="review">
+      {{{body}}}
+    </div>
+  </body>
 </html>
+

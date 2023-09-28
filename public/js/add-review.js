@@ -3,7 +3,6 @@ async function newFormHandler(event) {
   const rating = document.querySelector("#ratinginput").value;
   const review = document.querySelector("#reviewinput").value;
   const movie_id = document.querySelector("#movieinput").value;
-
   // Send fetch request to add a new review
   const response = await fetch(`/api/review`, {
     method: "POST",
@@ -25,5 +24,5 @@ async function newFormHandler(event) {
 }
 
 document
-  .querySelector("#submitinput")
+  .querySelector(".add-review-form")
   .addEventListener("submit", newFormHandler);

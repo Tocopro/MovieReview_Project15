@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This is a movie app that we created for the project.[add text to briefly describe what it does]
+This is a movie app that we created for the project.The App will allow the user to read or post/edit reviews from anywhere. The user can benefit from this app because it will allow them to make informed choices about movies.
 
 [Getting Started](#getting-started) |
 [Installation](#installation) |
@@ -15,22 +15,29 @@ This is a movie app that we created for the project.[add text to briefly describ
 
 ## Getting Started
 
-[Our inspiration why we built it the way we did]
+The App was developed by a group of individuals who collaborated to come up with the movie app idea. The project will give us an opportunity to learn new skills as developers.
 
 ## Installation
 
-[how the app is installed]
+The App is deployed in Heroku
 
 ## Usage
 
-[using the app, or how to use the app]
+The User will login into the app  after loading the page from the URL.
+Open the review pages and view review made by other users. Search for movies in the search bar. 
+
 
 ## Credits
 
-[give credit or acknowledgment to your resources used to create the app]
+The following people and resources were helpful in the app creation
+
+Nicholas Wachira
+Brayden Smith
+Saeed Amaan
+Collins Chesumbai
+
+TA
+Google
 
 
-## Project Participants
 
-
-[all names of  individual who participated]

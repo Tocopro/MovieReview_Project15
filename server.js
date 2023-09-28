@@ -25,7 +25,6 @@ const sess = {
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
-app.use(express.static("public"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,20 +39,4 @@ sequelize.sync({ force: false }).then(() => {
       `\nServer running on port ${PORT}. Visit http://localhost:${PORT} `
     )
   );
-});
-
-app.get("/signup", (req, res) => {
-  res.render("signup");
-});
-
-app.get("/login", (req, res) => {
-  res.render("login");
-});
-
-app.get("/index", (req, res) => {
-  res.render("index");
-});
-
-app.get("/review", (req, res) => {
-  res.render("review");
 });
